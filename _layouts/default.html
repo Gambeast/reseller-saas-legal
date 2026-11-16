@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }}</title>
+  <style>
+    :root { color-scheme: light; }
+    body { max-width: 48rem; margin: 0 auto; padding: 1.5rem; color: #18212b; background: #fff; font: 1rem/1.65 system-ui, sans-serif; }
+    h1, h2 { line-height: 1.25; }
+    h1 { margin-top: 1rem; }
+    h2 { margin-top: 2rem; }
+    a { color: #064b90; }
+    a:focus-visible { outline: 3px solid #1267ad; outline-offset: 3px; }
+    nav { padding-bottom: 1rem; border-bottom: 1px solid #c7d0d9; }
+    main { padding-bottom: 3rem; }
+  </style>
+</head>
+<body>
+  <main id="main-content">{{ content }}</main>
+</body>
+</html>
